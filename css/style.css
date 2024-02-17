@@ -1,0 +1,85 @@
+/*
+ * Regroupe les règles de style générales.
+*/
+
+:root {
+	--color-primary: #222;
+	--color-accent: #666;
+
+	--color-artistes: #189963;
+	--color-albums: #6532f0;
+	--color-morceaux: #1d98df;
+	--color-genres: #ee4e26;
+}
+
+html {
+	font-size: 62.5%;
+	font-size: 1.7rem;
+}
+@media screen and (min-width: 1024px) {
+	html {
+		font-size: 1.2rem;
+	}
+}
+
+body {
+	font-family: 'Circular Std', 'Product Sans', 'Century Gothic', 'CenuryGothic', 'AppleGothic', sans-serif;
+
+	color: var(--color-primary);
+}
+
+
+/* TOGGLE HIDE */
+	.hide,
+	.hide * {
+	display: none;
+	}
+/**/
+
+
+
+/* Quelques règles d'affichage basiques */
+	/* les éléments enfant ne dépassent plus de l'élément parent */
+		*,
+		*::after,
+		*::before {
+		box-sizing: border-box;
+		}
+	/**/
+
+	/* les liens sont sans soulignage et sans coloration */
+		a {
+			text-decoration: none;
+		}
+		a:link,
+		a:visited {
+			color: var(--color-primary);
+		}
+	/**/
+
+	/* 
+	 * les listes et les tableaux n'ont plus de tabulation, padding ou marges, et sont sans bulles 
+	*/
+		ul {
+			list-style: none;
+			
+			margin-block-start: 0;
+			margin-block-end: 0;
+			padding-inline-start: 0;
+		}
+
+		table {
+			border-spacing: 0;
+			border-color: transparent;
+		}
+	/**/
+
+	/* 
+	 * les checkboxes sont invisibles (le seul moyen de les déclencher
+	 * est de cliquer sur leur label)
+	*/
+		[type=checkbox] {
+			display: none;
+		}
+	/**/
+/**/

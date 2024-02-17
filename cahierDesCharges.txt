@@ -1,0 +1,38 @@
+Créer un site de notation : un site qui recueille des avis et des notes sur un sujet, comme par exemple des oeuvres, des recettes, des jeux vidéo, de la musique, des acteurs, des clubs de sport, des athlètes, des restaurants, des lieux etc.
+
+exemples de sites web similaires : TripAdvisor, AlloCiné...
+
+
+
+fonctionnalités attendues :
+- page d'accueil : redirige vers la page de connexion / inscription si non connecté. Permet des recherches si connecté.
+
+- fonction de recherche : possibilité de faire des recherches par critères, comme le genre de muique, l'année de sortie, l'artiste, ou encore le nom du morceau. On doit pouvoir faire une recherche assiossative avec au moins deux critères différents.
+
+✅ page d'inscription : formulaire d'inscription chargé de créer les nouveaux comptes. Les champs requis minimum sont le pseudo et le mot de passe. Le mot de passe sera stocké dans la db de manière chiffrée.
+
+✅ page de connexion : formulaire de connexion.
+
+- page de profil : chaque utilisateur a sa page de profil. Il peut consulter la sienne et en modifier des options et consulter celle des autres.
+
+- comptes admin : Les comptes admin peuvent effacer des avis / notes de n'importe qui bannir des utilisateurs.
+
+- publier des avis : l'utilisateur pourra envoyer un message contenant un avis et / ou une note (le site doit proposer au moins l'un des deux) à propos d'un artiste, d'un album ou d'un morceau. Ces avis sont publics.
+
+
+- la db est préremplie de données statiques (aucun utilisateur ne peut en ajouter).
+
+- l'utilisateur peut s'inscrire et se connecter s'il a un compte. [optionnel] il peut supprimer son compte, ce qui ne supprimera pas ses messages mais empêchera d'accéder à sa page de profil.
+
+
+
+[implémenter au moins 1] Extensions :
+- pouvoir gérer la visibilité de son avis ou de sa note, en choisissant publique ou privé. (pour la note, elle s'ajoutera à la moyenne totale de l'objet noté, sans la rendre publique par exemple).
+
+- permettre aux administrateurs d'ajouter du contenu à la db.
+
+- ajouter un bouton like aux avis : ceux qui ont le plus de likes remontent dans l'ordre des avis sur la page de l'objet concerné.
+
+- répondre aux avis.
+
+- autre chose imaginée...
